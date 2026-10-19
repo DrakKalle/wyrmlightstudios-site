@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wyrm Light Studios</title>
+<meta name="description" content="Wyrm Light Studios is an independent game studio from Sweden making games about creatures, myth, and the dark places in between.">
+<meta property="og:title" content="Wyrm Light Studios">
+<meta property="og:description" content="Independent game studio from Sweden. Something is hatching.">
+<meta property="og:image" content="https://wyrmlightstudios.com/dragon.png">
+<meta property="og:url" content="https://wyrmlightstudios.com/">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Inter:wght@300;400;500&display=swap');
+
+.wl { --bg:#08090c; --bg2:#0c0f14; --text:#dfe4ea; --muted:#7f8a98; --accent:#8fa9c8; --accent-soft:rgba(143,169,200,.12);
+  background:var(--bg); color:var(--text); font-family:'Inter',system-ui,sans-serif; font-weight:300; line-height:1.75;
+  overflow:hidden; }
+html, body { margin:0; padding:0; background:#08090c; }
+.wl * { box-sizing:border-box; }
+.wl a { color:var(--accent); text-decoration:none; transition:color .3s; }
+.wl a:hover { color:var(--text); }
+.wl h1, .wl h2 { font-family:'Cinzel',serif; font-weight:500; letter-spacing:.08em; color:var(--text); margin:0 0 .5em; line-height:1.2; }
+.wl-wrap { max-width:920px; margin:0 auto; padding:0 24px; }
+.wl-label { font-family:'Inter',sans-serif; font-weight:500; color:var(--accent); letter-spacing:.32em; text-transform:uppercase; font-size:.72rem; margin:0 0 22px; }
+
+/* HERO */
+.wl-hero { min-height:90vh; display:flex; align-items:center; justify-content:center; text-align:center;
+  background: radial-gradient(ellipse at 50% 50%, rgba(143,169,200,.07), transparent 60%), var(--bg); }
+.wl-hero h1 { font-size:clamp(2rem,5.5vw,3.8rem); }
+.wl-lead { max-width:520px; margin:8px auto 44px; color:var(--muted); font-size:1.05rem; }
+.wl-btn { display:inline-block; padding:13px 32px; border:1px solid rgba(143,169,200,.45); color:var(--text) !important;
+  letter-spacing:.22em; text-transform:uppercase; font-size:.72rem; font-weight:500; transition:background .3s, border-color .3s; }
+.wl-btn:hover { background:var(--accent-soft); border-color:var(--accent); }
+
+/* TEASER */
+.wl-sec { padding:120px 0; }
+.wl-sec.alt { background:var(--bg2); }
+.wl-teaser { display:grid; grid-template-columns:1fr 1.1fr; gap:64px; align-items:center; }
+.wl-teaser h2 { font-size:clamp(1.6rem,3.6vw,2.3rem); }
+.wl-whisper { font-family:'Cinzel',serif; color:var(--muted); font-size:1.1rem; letter-spacing:.04em; margin:6px 0 30px; }
+.wl-soon { color:var(--muted); font-size:.85rem; letter-spacing:.2em; text-transform:uppercase; }
+.wl-frame { position:relative; aspect-ratio:4/5; overflow:hidden; }
+.wl-frame img { width:100%; height:100%; object-fit:cover; display:block; filter:brightness(.8) saturate(.85); }
+.wl-frame img { -webkit-mask-image: radial-gradient(ellipse closest-side at 50% 50%, #000 55%, transparent 100%);
+                mask-image: radial-gradient(ellipse closest-side at 50% 50%, #000 55%, transparent 100%); }
+
+/* ABOUT */
+.wl-about p { max-width:640px; color:var(--muted); }
+.wl-cards { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:44px; max-width:700px; }
+.wl-card { border-top:1px solid rgba(143,169,200,.25); padding:22px 0 0; }
+.wl-card h3 { font-family:'Inter',sans-serif; font-weight:500; font-size:.78rem; letter-spacing:.25em; text-transform:uppercase; color:var(--text); margin:0 0 8px; }
+.wl-card p { margin:0; color:var(--muted); font-size:.95rem; }
+
+/* FOOTER */
+.wl-foot { padding:90px 0 50px; text-align:center; border-top:1px solid rgba(223,228,234,.06); }
+.wl-foot h2 { font-size:1.3rem; }
+.wl-social { display:flex; gap:32px; justify-content:center; flex-wrap:wrap; margin:20px 0 44px; letter-spacing:.22em; text-transform:uppercase; font-size:.75rem; font-weight:500; }
+.wl-copy { color:#4f5763; font-size:.75rem; letter-spacing:.05em; }
+
+@media (max-width:760px){
+  .wl-teaser, .wl-cards { grid-template-columns:1fr; gap:36px; }
+  .wl-sec { padding:80px 0; }
+}
+</style>
+</head>
+<body>
+<div class="wl">
+
+  <!-- ===== HERO ===== -->
+  <section class="wl-hero">
+    <div class="wl-wrap">
+      <p class="wl-label">Independent game studio · Sweden</p>
+      <h1>Wyrm Light Studios</h1>
+      <p class="wl-lead">Games about creatures, myth, and the dark places in between.</p>
+      <a class="wl-btn" href="#wl-follow">Follow the journey</a>
+    </div>
+  </section>
+
+  <!-- ===== TEASER ===== -->
+  <section class="wl-sec alt">
+    <div class="wl-wrap wl-teaser">
+      <div>
+        <p class="wl-label">First project</p>
+        <h2>Something is hatching.</h2>
+        <p class="wl-whisper">Every legend starts small.</p>
+        <p class="wl-soon">More soon</p>
+      </div>
+      <div class="wl-frame">
+        <img src="dragon.png" alt="Something in the dark">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="wl-sec wl-about">
+    <div class="wl-wrap">
+      <p class="wl-label">The studio</p>
+      <h2>Small studio. Big creatures.</h2>
+      <p>Wyrm Light Studios was founded by Karl Haag, a 3D creature and character artist from Sweden.
+         We're currently building our first game.</p>
+
+      <div class="wl-cards">
+        <div class="wl-card"><h3>Games</h3><p>Our first title is in development.</p></div>
+        <div class="wl-card"><h3>Creature Art</h3><p>3D creature and character art for other studios.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="wl-foot" id="wl-follow">
+    <div class="wl-wrap">
+      <h2>Follow the journey</h2>
+      <p style="color:var(--muted)"><a href="mailto:hello@wyrmlightstudios.com">hello@wyrmlightstudios.com</a></p>
+      <div class="wl-social">
+        <a href="https://instagram.com/wyrmlightstudios" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.artstation.com/tanide" target="_blank" rel="noopener">ArtStation</a>
+      </div>
+      <p class="wl-copy">© 2026 Wyrm Light Studios</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
